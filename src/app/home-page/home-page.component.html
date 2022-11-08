@@ -1,0 +1,34 @@
+<div class="background"
+  infinite-scroll
+  [infiniteScrollDistance]="2"
+  [infiniteScrollThrottle]="5"
+  (scrolled)="onScroll()">
+
+  <div class="form-group">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Search..."
+      [(ngModel)]="filterTerm"
+    />
+  </div>
+
+  <mat-card class="mat-card" *ngFor="let p of post | filter: filterTerm" (click)="onclick(p.id, p.user_id)">
+    <div>
+      <mat-label>Id: </mat-label>
+      <mat-card-title>{{ p.id }}</mat-card-title>
+    </div>
+    <mat-card-header>
+      <div>
+        <mat-label>Title</mat-label>
+        <mat-card-title>{{ p.title }}</mat-card-title>
+      </div>
+    </mat-card-header>
+    <mat-card-header>
+      <div>
+        <mat-label>Body</mat-label>
+        <mat-card-content>{{ p.body }}</mat-card-content>
+      </div>
+    </mat-card-header>
+  </mat-card>
+</div>

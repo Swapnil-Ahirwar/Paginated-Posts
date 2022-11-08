@@ -1,0 +1,1 @@
+export const ENDPOINT = "https://gorest.co.in/public/v2";

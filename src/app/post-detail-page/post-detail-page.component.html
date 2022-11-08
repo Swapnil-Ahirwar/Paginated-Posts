@@ -1,0 +1,53 @@
+<div>
+  <mat-card class="mat-card">
+    <mat-card-header>
+      <div>
+        <mat-label>Id: </mat-label>
+        <mat-card-title>{{ user?.id }}</mat-card-title>
+      </div>
+    </mat-card-header>
+    <mat-card-header>
+      <div>
+        <mat-label>Name: </mat-label>
+        <mat-card-title>{{ user?.name }}</mat-card-title>
+      </div>
+    </mat-card-header>
+    <mat-card-header>
+      <div>
+        <mat-label>Email: </mat-label>
+        <mat-card-content>{{ user?.email }}</mat-card-content>
+      </div>
+    </mat-card-header>
+    <mat-card-header>
+      <div>
+        <mat-label>Gender: </mat-label>
+        <mat-card-content>{{ user?.gender }}</mat-card-content>
+      </div>
+    </mat-card-header>
+  </mat-card>
+</div>
+
+<div class="background">
+  <mat-card class="mat-card" *ngFor="let comment of commentDetail">
+    <mat-card-header>
+      <div>
+        <mat-label>Post Id: </mat-label>
+        <mat-card-title>{{ comment.post_id }}</mat-card-title>
+      </div>
+    </mat-card-header>
+    <mat-card-header>
+      <div>
+        <mat-label>Name: </mat-label>
+        <mat-card-title>{{ comment.name }}</mat-card-title>
+      </div>
+    </mat-card-header>
+    <mat-card-header>
+      <div>
+        <mat-label>Body: </mat-label>
+        <mat-card-content>{{ comment.body }}</mat-card-content>
+      </div>
+    </mat-card-header>
+  </mat-card>
+</div>
+
+
