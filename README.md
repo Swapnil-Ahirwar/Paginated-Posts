@@ -1,27 +1,25 @@
-# FreshView
+# #Paginated-Posts-Sample
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
+This sample demonstrates dynamic list, pagination, routing, and search is based on open-source api https://gorest.co.in/.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
+- Getting the list of all the posts.
+- Filter list based on search keywords.
+- Dynamic loading of list with pagination.
+- Redirection to detail page via router.
 
-## Code scaffolding
+## Tech
+- [AngularJS] - Star of the show!! ✨✨
+- [HTML/CSS] - Obviously!!
+- [Firebase] - Deployed with the help of firebase.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Demo
+<a target="_blank" href="https://paginated-posts-aecbf.web.app">Live Demo</a>
 
-## Build
+And star this repository if found useful. 
+If there are bug/fixes, feel free to raise Issue/Pull Request.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+[AngularJS]: <https://angularjs.org/>
+[HTML/CSS]: <https://www.w3schools.com/html/html_css.asp>
+[Firebase]: <https://firebase.google.com/docs/firestore>
