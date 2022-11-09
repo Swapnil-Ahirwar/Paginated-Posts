@@ -1,5 +1,6 @@
-<div class="card">
-  <mat-card class="mat-card">
+<div>
+  <mat-card class="mat-card" style="background-color: #FBAB7E;
+  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%); border-color: brown;">
     <mat-card-header>
       <div>
         <mat-label>Title: </mat-label>
@@ -15,16 +16,22 @@
   </mat-card>
 </div>
 <div>
-  <mat-card class="mat-card">
+  <mat-card class="mat-card" style="background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+  ;">
     <mat-card-header>
       <div>
         <mat-label>Name: </mat-label>
         <mat-card-title>{{ user?.name }}</mat-card-title>
       </div>
+    </mat-card-header>
+    <mat-card-header>
       <div>
         <mat-label>Email: </mat-label>
         <mat-card-content>{{ user?.email }}</mat-card-content>
       </div>
+    </mat-card-header>
+    <mat-card-header>
       <div>
         <mat-label>Gender: </mat-label>
         <mat-card-content>{{ user?.gender }}</mat-card-content>
@@ -32,28 +39,10 @@
     </mat-card-header>
   </mat-card>
 </div>
-
-<!-- <div class="background">
-  <mat-card class="mat-card" *ngFor="let comment of commentDetail">
-    <mat-card-header>
-      <div>
-        <mat-label>Name: </mat-label>
-        <mat-card-title>{{ comment.name }}</mat-card-title>
-      </div>
-    </mat-card-header>
-    <mat-card-header>
-      <div>
-        <mat-label>Body: </mat-label>
-        <mat-card-content>{{ comment.body }}</mat-card-content>
-      </div>
-    </mat-card-header>
-  </mat-card>
-</div> -->
-
+<div class="row d-flex justify-content-center">
+  <h1>Comments:- </h1></div>
 <section style="background-color: #FBAB7E;
 background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);" *ngFor="let comment of commentDetail">
-  <div class="row d-flex justify-content-center">
-    <h1>Comments:- </h1></div>
   <div class="container my-1 py-5 text-dark">
     <div class="row d-flex justify-content-left">
       <div class="col-md-11 col-lg-9 col-xl-7">
