@@ -23,19 +23,19 @@ export class WebService {
 
   getPost(postId: number): Observable<Post> {
     return this.httpClient.get(
-      `https://gorest.co.in/public/v2/posts/${postId}`
+      `${ENDPOINT}/posts/${postId}`
     ) as Observable<Post>
   }
 
   getComment(postId : number): Observable<Comment[]>{
     return this.httpClient.get(
-      `https://gorest.co.in/public/v2/comments?post_id=${postId}`
+      `${ENDPOINT}/comments?post_id=${postId}`
     )as Observable<Comment[]>
   }
 
   getUser(userId : number): Observable<User>{
     return this.httpClient.get(
-      `https://gorest.co.in/public/v2/users/${userId}`
+      `${ENDPOINT}/users/${userId}`
     )as Observable<User>
   }
 }

@@ -14,10 +14,6 @@
   </div>
 
   <mat-card class="mat-card" *ngFor="let p of post | filter: filterTerm" (click)="onclick(p.id, p.user_id)">
-    <div>
-      <mat-label>Id: </mat-label>
-      <mat-card-title>{{ p.id }}</mat-card-title>
-    </div>
     <mat-card-header>
       <div>
         <mat-label>Title</mat-label>
